@@ -207,7 +207,10 @@ def main():
             zen_issue_detail=getIssueDetailFromZen(repoid=config.Zenhub_repo_Id,issue_id=items['issue_number'])
             name=issue.title
             description=issue.body
-            status=getTranslationData(json.load(open('zen2ahaMap.json')),zen_issue_detail['pipeline']['name'])            
+            try:
+                status=getTranslationData(json.load(open('zen2ahaMap.json')),zen_issue_detail['pipeline']['name'])            
+            except:
+                status=None
             if(status is not None):
                 response=insertMasterFeatureAha(release_id,name,description,status, due_date=due_date)
                 if(response.status_code==200):
