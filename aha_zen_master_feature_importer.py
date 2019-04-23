@@ -234,7 +234,10 @@ def main():
             changes={}
             G_name=issue.title
             G_description=issue.body
-            Z_status=getTranslationData(json.load(open('zen2ahaMap.json')),zen_issue_detail['pipeline']['name'])            
+            try:
+                Z_status=getTranslationData(json.load(open('zen2ahaMap.json')),zen_issue_detail['pipeline']['name'])
+            except:
+                Z_status=None
             G_Release=issue.milestone.title if issue.milestone is not None else None
             Aha_MF=getMasterFeatureDetailAha(aha_epic['aha_ref_num'])        
             if(Aha_MF is not None):
