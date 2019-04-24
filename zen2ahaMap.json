@@ -14,5 +14,6 @@
 "Pending Automation":"In QA",
 "Ready for Design Review":"In QA",
 "Ready for Release":"Ready for Release",
-"Closed":"Released"
+"Closed":"Released",
+"closed":"Released"
 }
