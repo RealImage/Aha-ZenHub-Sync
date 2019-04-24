@@ -24,7 +24,7 @@ def main():
     import releases
     import aha_zen_adapter
     import aha_zen_master_feature_importer
-    releases.main()
+    #releases.main()
     #feature_update=aha_zen_adapter.main()
 
     #slack_sender.send_message('Features Sync happened @ '+str(datetime.now())+ ' logs @ ' +upload_to_storage(feature_update), config.slack_channel)
