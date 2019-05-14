@@ -7,7 +7,8 @@
 "In Dev":"In Dev",
 "Epics In Dev":"In Dev",
 "Parked":"Parked",
-"Dev Done":"In Dev",
+"Pending Review":"In Dev",
+"Review Done":"Ready for QA",
 "Pending Fixes":"In QA",
 "Ready for QA":"Ready for QA",
 "In QA":"In QA",
@@ -15,6 +16,5 @@
 "Ready for Design Review":"In QA",
 "Ready for Release":"Ready for Release",
 "Closed":"Released",
-"closed":"Released",
-"Review Done":"Ready for QA"
+"closed":"Released"
 }
