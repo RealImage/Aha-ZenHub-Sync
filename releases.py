@@ -37,7 +37,7 @@ def getReleasesFromZenhub(repoid):
 def getReleasesfromAha(page=1):
     data={"releases":[]}
     url=urljoin(config.Aha_Domain,'/api/v1/products/{product_id}/releases'.format(product_id=config.product_id))
-    rs= requests.get(url, headers=AHA_HEADER)
+    rs= requests.get(url, headers=AHA_HEADER,params={"page":page})
     if(rs.status_code==200):
         data["releases"]=data["releases"]+rs.json()['releases']
         currentpage=rs.json()['pagination']['current_page']
