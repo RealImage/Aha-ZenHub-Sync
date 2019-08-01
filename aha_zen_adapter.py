@@ -25,7 +25,7 @@ config=Objectifier(config)
 
 AHA_TOKEN=config.AHA_TOKEN
 ZENHUB_TOKEN=config.ZENHUB_TOKEN
-AHA_HEADER={'Authorization':AHA_TOKEN,'Content-Type': "application/json","User-Agent":"allandavid35@gmail.com"}
+AHA_HEADER={'Authorization':AHA_TOKEN,'Content-Type': "application/json","User-Agent":"@gmail.com"}
 ZENHUB_HEADER={'X-Authentication-Token':ZENHUB_TOKEN}
 GITHUB_TOKEN=config.GITHUB_TOKEN
 ZH_ISSUE_RELEASE_MAP={}
