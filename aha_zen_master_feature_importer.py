@@ -237,7 +237,7 @@ def main():
             try:
                 Z_status=getTranslationData(json.load(open('zen2ahaMap.json')),zen_issue_detail['pipeline']['name'])
             except:
-                if('pipeline' not in zen_issue_detail and issue.state =='closed'):
+                if('pipeline' not in zen_issue_detail and issue.state =='Closed'):
                     Z_status=getTranslationData(json.load(open('zen2ahaMap.json')),issue.state)
                 else:
                     Z_status=None
