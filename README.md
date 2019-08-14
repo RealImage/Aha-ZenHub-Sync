@@ -31,4 +31,4 @@ The below are the mapping for the Epic's that are present in Zenhub to be repres
 "Pending Automation":"In QA",
 "Ready for Design Review":"In QA",
 "Ready for Release":"Ready for Release",
-"Closed":"Released",```
+"Closed":"Released",
