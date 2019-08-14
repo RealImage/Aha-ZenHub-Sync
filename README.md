@@ -16,7 +16,8 @@ So basically this script helps to bring the Epics and the User stories from Zenh
 
 The below are the mapping for the Epic's that are present in Zenhub to be represented in Aha
 
-```"Whislist":"Whislist",
+```sh
+"Whislist":"Whislist",
 "User Stories":"Backlog",
 "Epics": "Backlog",
 "Issues": "Backlog",
@@ -34,10 +35,12 @@ The below are the mapping for the Epic's that are present in Zenhub to be repres
 "Ready for Design Review":"In QA",
 "Ready for Release":"Ready for Release",
 "Closed":"Released",
+```
 > The pipelines are configurable
 
-# Configuration to be done for each products
-```"Zenhub_Domain":"https://api.zenhub.io",
+Configuration to be done for each products
+```sh
+"Zenhub_Domain":"https://api.zenhub.io",
 "Aha_Domain":"https://qubecinema.aha.io",
 "Zenhub_repo_Id":"*******",
 "product_id":"************",
@@ -53,3 +56,4 @@ The below are the mapping for the Epic's that are present in Zenhub to be repres
 "Endurance_Source":"Firebase Source 2",
 "slack_channel":"Slack Channel ID to send the report",
 "Endurance_Source_3":"Firebase Source 2"
+```
