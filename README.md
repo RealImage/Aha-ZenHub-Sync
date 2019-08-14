@@ -44,7 +44,7 @@ Configuration to be done for each products
 "Aha_Domain":"https://qubecinema.aha.io",
 "Zenhub_repo_Id":"*******",
 "product_id":"************",
-"product_ref":"MB",
+"product_ref":"**",
 "repo_name":"Realimage/******",
 "ndurance_key":"The Key that is generated from Firebase",
 "update_release_dates": false,
@@ -53,7 +53,7 @@ Configuration to be done for each products
 "AHA_TOKEN":"Token",
 "ZENHUB_TOKEN":"Token",
 "GITHUB_TOKEN":"Token",
-"Endurance_Source":"Firebase Source 2",
+"Endurance_Source":"Firebase Source",
 "slack_channel":"Slack Channel ID to send the report",
 "Endurance_Source_3":"Firebase Source 2"
 ```
