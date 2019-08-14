@@ -218,7 +218,7 @@ def generatediff(Aha_feature,Zen_issue, Git_issue=None , repo_id=None):
             ######################
 
     except Exception as e:
-        logger.error("Error was encountered during update")
+        logger.error("Error was encountered during update "+ sys.exc_info()[0])
     return changes
 
 #Update details on to aha and Log the same in detail  | Rate Limit : Cant make more than 1 request per second  
