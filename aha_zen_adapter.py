@@ -160,12 +160,10 @@ def buildEpicStoryMap(repoid):
     return issue_epic_map
 
 EPIC_MAP=buildEpicStoryMap(config.Zenhub_repo_Id)
-print("=="*100)
-print(str(EPIC_MAP))
+
 
 #Compare status and generate diff 
 def generatediff(Aha_feature,Zen_issue, Git_issue=None , repo_id=None):
-    print(str(Aha_feature) , str(Zen_issue), str(Git_issue))
     zen=Objectifier(Zen_issue)
     Aha=Objectifier(Aha_feature)
     changes=[]
@@ -185,9 +183,6 @@ def generatediff(Aha_feature,Zen_issue, Git_issue=None , repo_id=None):
             except:
                 Zen_Epic=None
             try:
-             print("$"*50)
-             print(Zen_Epic , Aha_Epic) 
-             print("$"*50)
              if(Aha_Epic!=Zen_Epic and Zen_Epic is not None):
                  changes.append({'master_feature':Zen_Epic})
             except:
