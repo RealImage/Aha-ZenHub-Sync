@@ -163,6 +163,7 @@ EPIC_MAP=buildEpicStoryMap(config.Zenhub_repo_Id)
 
 #Compare status and generate diff 
 def generatediff(Aha_feature,Zen_issue, Git_issue=None , repo_id=None):
+    print(str(Aha_feature) , str(Zen_issue), str(Git_issue))
     zen=Objectifier(Zen_issue)
     Aha=Objectifier(Aha_feature)
     changes=[]
@@ -178,7 +179,7 @@ def generatediff(Aha_feature,Zen_issue, Git_issue=None , repo_id=None):
             except:
                 Aha_Epic=None
             try:
-                Zen_Epic=ENDURANCE[str(EPIC_MAP[zen.id])]['aha_ref_num']
+                requests.get(urljoin(config.Zenhub_Domain,'/p1/repositories/{0}/epics/'.format(repoid)),headers=ZENHUB_HEADER)
             except:
                 Zen_Epic=None
             try:
