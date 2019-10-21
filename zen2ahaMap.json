@@ -18,5 +18,6 @@
     "Pending QA Review": "In QA",
     "Ready for Design Review": "In QA",
     "Ready for Release": "Ready for Release",
+    "Review for Release": "Ready for Release",
     "Closed": "Released"
 }
