@@ -35,9 +35,9 @@ The below are the mapping for the Epic's that are present in Zenhub to be repres
  "Pending Automation": "In QA",
  "Pending QA Review": "In QA",
  "Ready for Design Review": "In QA",
-"Ready for Release": "Ready for Release",
-"Review for Release": "Ready for Release",
-"Closed": "Released"
+ "Ready for Release": "Ready for Release",
+ "Review for Release": "Ready for Release",
+ "Closed": "Released"
 ```
 > The pipelines are configurable
 
