@@ -13,6 +13,7 @@
     "Review Done": "Ready for QA",
     "Pending Fixes": "In QA",
     "Ready for QA": "Ready for QA",
+    "QA This Iteration":  "Ready for QA",
     "In QA": "In QA",
     "QA Done": "In QA",
     "Pending Automation": "In QA",
