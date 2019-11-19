@@ -22,6 +22,7 @@ The below are the mapping for the Epic's that are present in Zenhub to be repres
  "Epics": "Backlog",
  "Issues": "Backlog",
  "Next Iteration": "Ready for Dev",
+ "Next Pickup": "Ready for Dev",
  "This Iteration": "Ready for Dev",
  "In Dev": "In Dev",
  "Epics In Dev": "In Dev",
