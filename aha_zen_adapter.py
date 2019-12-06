@@ -173,7 +173,7 @@ def generatediff(Aha_feature,Zen_issue, Git_issue=None , repo_id=None):
         if(zen.estimate is not None):             
             if(Aha.original_estimate!=zen.estimate.value):
                 changes.append({'original_estimate':zen.estimate.value}) # Update Estimate
-        if(zen.is_epic==False):
+        if(zen.is_epic==True):
             try:
                 Aha_Epic=Aha.master_feature.reference_num
             except:
