@@ -240,7 +240,7 @@ def main():
                 if('pipeline' not in zen_issue_detail):
                     Z_status=getTranslationData(json.load(open('zen2ahaMap.json')),'Closed')
                 else:
-                    Z_status='Released'
+                    Z_status=None
             G_Release=issue.milestone.title if issue.milestone is not None else None
             Aha_MF=getMasterFeatureDetailAha(aha_epic['aha_ref_num'])        
             if(Aha_MF is not None):

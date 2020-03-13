@@ -167,8 +167,10 @@ def generatediff(Aha_feature,Zen_issue, Git_issue=None , repo_id=None):
     zen=Objectifier(Zen_issue)
     Aha=Objectifier(Aha_feature)
     changes=[]
-    try:        
-        if(Aha.workflow_status.name != getTranslationData(map_data,zen.pipeline.name) and getTranslationData(map_data,zen.pipeline.name) is not None):
+    try:
+        if(zen.pipeline is None and Aha.workflow_status.name != 'Released'):
+            changes.append({'workflow_status':{"name":getTranslationData(map_data,'Closed')}})   
+        elif(Aha.workflow_status.name != getTranslationData(map_data,zen.pipeline.name) and getTranslationData(map_data,zen.pipeline.name) is not None):
             changes.append({'workflow_status':{"name":getTranslationData(map_data,zen.pipeline.name)}})   
         if(zen.estimate is not None):             
             if(Aha.original_estimate!=zen.estimate.value):
@@ -277,6 +279,8 @@ def main(skip=[]):
     global ZH_ISSUE_RELEASE_MAP
     ZH_ISSUE_RELEASE_MAP= build_Release_Map_ZH()
     for items in FeatureList:
+        if(items['reference_num']=='QS-797' or items['reference_num']=='QS-290'):
+            print('mouse')
         AhaFeature=getFeatureDetailFromAha(items['reference_num'])
         compound_id=str(list( filter(lambda types: types['name'] == 'compound_id', AhaFeature['integration_fields']) )[0]['value'])
         repoId=compound_id.split('/')[0]
